@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main() {
+    int num1, num2, num3;
+    printf("Ingresa el primer número (mayor de 3 y menor de 15): ");
+    scanf("%d", &num1);
+    printf("Ingresa el segundo número (mayor de 3 y menor de 15): ");
+    scanf("%d", &num2);
+    printf("Ingresa el tercer número (mayor de 3 y menor de 15): ");
+    scanf("%d", &num3);
+    if (num1 < 3 || num1 > 15 || num2 < 3 || num2 > 15 || num3 < 3 || num3 > 15) {
+        printf("Error: Los números deben estar entre 3 y 15.");
+        return 1; 
+    }
+    int temp;
+    if (num1 < num2) {
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+    }
+    if (num1 < num3) {
+        temp = num1;
+        num1 = num3;
+        num3 = temp;
+    }
+    if (num2 < num3) {
+        temp = num2;
+        num2 = num3;
+        num3 = temp;
+    }
+    printf("Los números ordenados de mayor a menor son: %d, %d, %d", num1, num2, num3);
+    return 0; 
+}
