@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+    int opcion;
+    printf("Bienvenido, ¿que paquete de comida va a pedir el dia de hoy?\n");
+    printf("1. Hamburguesa con carne de res con papas fritas y refresco de 500 ml\n");
+    printf("2. Pizza grande con refresco de 500 ml\n");
+    printf("3. Pollo frito con papas fritas y refresco de 500 ml\n");
+    printf("4. 2 hot dogs grandes con refresco de 500 ml\n");
+    scanf("%d", &opcion);
+    switch (opcion) {
+        case 1:
+            printf("Ha seleccionado una Hamburguesa con carne de res con papas fritas y refresco de 500 ml.\n");
+            break;
+        case 2:
+            printf("Ha seleccionado una Pizza grande con refresco de 500 ml.\n");
+            break;
+        case 3:
+            printf("Ha seleccionado pollo frito con papas fritas y refresco de 500 ml.\n");
+            break;
+        case 4:
+            printf("Ha seleccionado 2 hot dogs grandes con refresco de 500 ml.\n");
+            break;
+        default:
+            printf("No servimos esa comida, LARGO DE AQUI \n");
+            break;
+    }
+    return 0;
+}
