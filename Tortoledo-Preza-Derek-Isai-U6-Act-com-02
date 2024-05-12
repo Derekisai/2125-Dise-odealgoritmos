@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+  int n, i, suma;
+  printf("Ingresa un número entero positivo: ");
+  scanf("%d", &n);
+  if (n <= 0) {
+    printf("Error: Te dije que tenia que ser un número entero positivo, TERCO.\n");
+    return 1;
+  }
+  printf("Para n = %d, Suma = %d.\n", n, 2 * n);
+  for (i = 1; i < n; i++) {
+    suma = 2 * i;
+    printf("Para n = %d, Suma = %d.\n", i, suma);
+  }
+  return 0;
+}
